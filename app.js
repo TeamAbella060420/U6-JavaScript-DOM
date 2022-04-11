@@ -1,13 +1,17 @@
-const btnUpdate = document.getElementById('btn-main');  
+const btnUpdate = document.querySelector('.btn-main');  
 const headline = document.getElementById('headline');
+const items = document.querySelectorAll('li');
+const hightlights = document.querySelectorAll('.highlight');
 
-const items = document.getElementsByTagName('li');
+for ( const highlight of hightlights ) {
+    highlight.style.backgroundColor = 'cornsilk';
+}
 
 for (let i = 0; i < items.length; i++) {
     items[i].style.color = 'orchid';
 }
 
-btnUpdate = addEventListener('click', () => {
+btnUpdate.addEventListener('click', () => {
     headline.style.border = 'solid 2px red';
     headline.style.fontSize = '60px';
 });
