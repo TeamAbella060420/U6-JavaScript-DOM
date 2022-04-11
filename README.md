@@ -1,3 +1,5 @@
 # U6-JavaScript-DOM
  Select an Element by ID - There is a two-step sequence when controlling an element in the DOM with JavaScript. First, you access the element, and then you can either read its contents or manipulate it somehow. There are several ways to access specific elements in the DOM. I'll select an element by its ID, with the getElementById() method.
  Select Elements by Tag Name - knowing the tag name of the element, I can use getElementsByTagName(). This method returns an HTMLCollection of elements with the given tag name.
+Select Elements by Class Name - When working with HTML, you'll often set class attributes on elements and apply styles to them with CSS. The document object provides a way to select elements in the DOM with a given class name with document.getElementsByClassName().
+Use CSS Queries to Select Page Elements - querySelector() and querySelectorAll() are the most flexible of all the DOM selector methods. They accept ID's, classes, tag names, and just about any valid CSS selector.
