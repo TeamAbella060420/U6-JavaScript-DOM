@@ -1,5 +1,8 @@
-const body = document.body;
+const btnUpdate = document.getElementById('btn-main');  
+const headline = document.getElementById('headline');
 
-body.addEventListener('click', () => {
-    body.innerHTML = '<h1>Hello, world!</h1>';
+btnUpdate = addEventListener('click', () => {
+    headline.style.border = 'solid 2px red';
+    headline.style.fontSize = '60px';
 });
+
