@@ -3,10 +3,12 @@ const btnToggle = document.querySelector('.btn-toggle');
 
 btnCreate.addEventListener('click', () => {											 
   const input = document.querySelector('.input-main');
-  const item = document.createElement('li');
+  const list = document.querySelector('ul');    
 
-  item.textContent = input.value;
-  console.log(item);
+  list.insertAdjacentHTML(
+      'afterbegin',
+      `<li>${input.value}</li>`
+  );  
   input.value = '';
 });
 
