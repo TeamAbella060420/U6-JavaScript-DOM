@@ -3,3 +3,4 @@
  Select Elements by Tag Name - knowing the tag name of the element, I can use getElementsByTagName(). This method returns an HTMLCollection of elements with the given tag name.
 Select Elements by Class Name - When working with HTML, you'll often set class attributes on elements and apply styles to them with CSS. The document object provides a way to select elements in the DOM with a given class name with document.getElementsByClassName().
 Use CSS Queries to Select Page Elements - querySelector() and querySelectorAll() are the most flexible of all the DOM selector methods. They accept ID's, classes, tag names, and just about any valid CSS selector.
+Get and Set Content with textContent and innerHTML - Learned two properties that provide ways to read and update content in the DOM, textContent and innerHTML.
