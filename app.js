@@ -1,18 +1,9 @@
-const btnUpdate = document.querySelector('.btn-main');  
-const headline = document.getElementById('headline');
-const items = document.querySelectorAll('li');
-const hightlights = document.querySelectorAll('.highlight');
-
-for ( const highlight of hightlights ) {
-    highlight.style.backgroundColor = 'cornsilk';
-}
-
-for (let i = 0; i < items.length; i++) {
-    items[i].style.color = 'orchid';
-}
+const btnUpdate = document.querySelector('.btn-main');
 
 btnUpdate.addEventListener('click', () => {
-    headline.style.border = 'solid 2px red';
-    headline.style.fontSize = '60px';
-});
+  const headline = document.getElementById('headline');													 
+  const input = document.querySelector('.input-main');
 
+  headline.textContent = input.value;
+  input.value = '';
+});
