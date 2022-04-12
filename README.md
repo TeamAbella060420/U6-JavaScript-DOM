@@ -8,3 +8,4 @@
 7. Set Inline Styles with the style Property - Like most other attributes, you can get and set the inline style of an element in the DOM with the style property. However, unlike most other attributes, the style property returns an object containing a list of CSS style properties.   
 8. Create New DOM Elements - create new elements and add them to the page. First, I'll create a new element with document.createElement()
 9. Append Nodes - I've learned how to create elements with JavaScript, but the newly created elements won't appear on the page until you add them to the DOM. Use the append() method to insert a new node inside a parent node.
+10. Insert HTML at Specified Positions - Use the InsertAdjacentHTML method to insert elements into the DOM. This method provides more control over inserting HTML inside a parent. You pass it the HTML and text content to create as a string, and then that string gets parsed and inserted into the DOM at the position you specify.
