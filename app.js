@@ -1,12 +1,12 @@
 const btnCreate = document.querySelector('.btn-main');
 const btnToggle = document.querySelector('.btn-toggle');
 
-btnCreate.addEventListener('click', () => {
-  const headline = document.getElementById('headline');													 
+btnCreate.addEventListener('click', () => {											 
   const input = document.querySelector('.input-main');
-  
-  headline.className = 'grow';
-  headline.textContent = input.value;
+  const item = document.createElement('li');
+
+  item.textContent = input.value;
+  console.log(item);
   input.value = '';
 });
 
