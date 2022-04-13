@@ -6,11 +6,12 @@ btnCreate.addEventListener('click', () => {
   const input = document.querySelector('.input-main');
   const list = document.querySelector('ul');    
 
-  input.value = '';                 
+               
   list.insertAdjacentHTML(
       'afterbegin',
       `<li>${input.value}</li>`     
   );  
+  input.value = '';  
 });                              // These syntax added the task that you type from the input box and listed it below.
 
 btnToggle.addEventListener('click', () => {
@@ -28,4 +29,4 @@ btnToggle.addEventListener('click', () => {
 btnRemove.addEventListener( 'click', ( ) => {
     const lastItem = document.querySelector('li:last-child');
     lastItem.remove();
-});                              // These syntaxt is for the red buuton at the bottom to remove the last task on the list.
+});                              // These syntaxt is for the red button at the bottom to remove the last task on the list.
