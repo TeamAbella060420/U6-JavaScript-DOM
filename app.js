@@ -2,17 +2,22 @@ const btnCreate = document.querySelector('.btn-main');
 const btnToggle = document.querySelector('.btn-toggle');
 const btnRemove = document.querySelector('.btn-remove');
 
-btnCreate.addEventListener('click', () => {											 
-  const input = document.querySelector('.input-main');
-  const list = document.querySelector('ul');    
+function attachRemoveButton(li) {
+    let remove = document.createElement('button')
+    remove.className = 'remove';
+    remove.textContent = 'Remove';
+    li.appendChild(remove)
+}
 
-               
-  list.insertAdjacentHTML(
-      'afterbegin',
-      `<li>${input.value}</li>`     
-  );  
-  input.value = '';  
-});                              // These syntax added the task that you type from the input box and listed it below.
+btnCreate.addEventListener('click', () => {
+    let ul = document.getElementsByTagName('ul')[0];
+    const input = document.querySelector('.input-main');
+    let li = document.createElement('li');
+    li.textContent = input.value;
+    attachRemoveButton(li)
+    ul.appendChild(li);
+    input.value = '';
+  });                           
 
 btnToggle.addEventListener('click', () => {
     const listContainer = document.querySelector('.list-container');
