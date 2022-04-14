@@ -1,12 +1,18 @@
 const btnCreate = document.querySelector('.btn-main');
 const btnToggle = document.querySelector('.btn-toggle');
 const btnRemove = document.querySelector('.btn-remove');
+const taskList = document.querySelector('.list-container ul');
+const listItems = taskList.children;
 
 function attachRemoveButton(li) {
     let remove = document.createElement('button')
     remove.className = 'remove';
     remove.textContent = 'Remove';
     li.appendChild(remove)
+}
+
+for (let i=0; i< listItems.length; i++) {
+    attachRemoveButton(listItems[i])
 }
 
 btnCreate.addEventListener('click', () => {
