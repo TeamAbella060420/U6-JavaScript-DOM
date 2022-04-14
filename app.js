@@ -25,6 +25,14 @@ btnCreate.addEventListener('click', () => {
     input.value = '';
   });                           
 
+taskList.addEventListener('click', (event) => {
+    if(event.target.tagName === "BUTTON") {
+        const button = event.target;
+        const li = button.parentNode;
+        li.remove()
+    }
+})
+
 btnToggle.addEventListener('click', () => {
     const listContainer = document.querySelector('.list-container');
     
@@ -37,7 +45,3 @@ btnToggle.addEventListener('click', () => {
     }
 });                              // These syntax is for the hide list and show list click button.
 
-btnRemove.addEventListener( 'click', ( ) => {
-    const lastItem = document.querySelector('li:last-child');
-    lastItem.remove();
-});                              // These syntaxt is for the red button at the bottom to remove the last task on the list.
